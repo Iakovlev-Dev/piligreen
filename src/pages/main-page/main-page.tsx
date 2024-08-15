@@ -1,6 +1,7 @@
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {AppRoute} from "../../const.ts";
 
+
 export default function MainPage () {
     return (
         <div className="wrapper">
