@@ -1,12 +1,22 @@
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {AppRoute} from "../../const.ts";
+import MainPage from "../../pages/main-page/main-page.tsx";
+import ContactsPage from "../../pages/contacts-page/contacts-page.tsx";
+import {HelmetProvider} from "react-helmet-async";
 
-function App() {
 
+export default function App() {
 
   return (
-    <div className="app">
-        Hello, World!
-    </div>
+      <BrowserRouter>
+          <HelmetProvider>
+              <Routes>
+                  <Route path={AppRoute.Main} element={<MainPage />}/>
+                  <Route path={AppRoute.Contacts} element={<ContactsPage />} />
+              </Routes>
+          </HelmetProvider>
+      </BrowserRouter>
+
   )
 }
 
-export default App

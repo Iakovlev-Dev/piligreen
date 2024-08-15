@@ -7,14 +7,34 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
 
 }
 
-main {
-    display: block;
+.wrapper {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
-.app {
+.main-page {
+    width: 100%;
+    height: 100vh;
+}
+.main-page-img {
+    background-image: url("../img/app-bg.jpg");
+}
+
+.bg-body-tertiary {
+    opacity: 0.5;
+}
+
+.nav-menu {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
 
 }
